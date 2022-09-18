@@ -1,7 +1,5 @@
-.container-fluid{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    background-color: black;
-}
 .nav-item{
-    color: white;
+    color: black;
+    font-family: Clearface Gothic LH Font Screenshots;
+    font-size: 20px;
 }
