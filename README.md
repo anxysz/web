@@ -1,2 +1,3 @@
 # web
-dikerjain bareng
+
+dikerjain bareng - bareng bersama teman - teman
