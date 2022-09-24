@@ -15,8 +15,6 @@
 
   Additional CSS Files
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
 
   <!-- Via Internet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
@@ -36,25 +34,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">Artikel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="product.html">Produk</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Kategori
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Kategori 1</a></li>
-              <li><a class="dropdown-item" href="#">Kategori 2</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Kategori 3</a>
-              </li>
-            </ul>
+            <a class="nav-link active" href="product.html">Produk</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Kontak</a>
@@ -74,36 +60,11 @@
   </nav>
   <!-- Navbar end -->
 
-  <!-- Page Content -->
-  <div class="page-heading products-heading header-text">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="text-content">
-            <h4>new arrivals</h4>
-            <h2>sixteen products</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
   <div class="products">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="filters">
-            <ul>
-              <li class="active" data-filter="*">All Products</li>
-              <li data-filter=".des">New Product</li>
-              <li data-filter=".dev">Flash Deals</li>
-              <li data-filter=".gra">Last Minute</li>
-            </ul>
-          </div>
-        </div>
+      <div class="row mt-5">
         <!--START GALLERY-->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mt-5">
           <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-1.jpg"
               alt="" class="img-fluid card-img-top">
             <div class="p-4">
@@ -119,7 +80,7 @@
         <!-- End -->
 
         <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mt-5">
           <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-2.jpg"
               alt="" class="img-fluid card-img-top">
             <div class="p-4">
@@ -135,7 +96,7 @@
         <!-- End -->
 
         <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mt-5">
           <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-3.jpg"
               alt="" class="img-fluid card-img-top">
             <div class="p-4">
@@ -151,7 +112,7 @@
         <!-- End -->
 
         <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mt-5">
           <div class="bg-white rounded shadow-sm"><img src="https://bootstrapious.com/i/snippets/sn-gallery/img-4.jpg"
               alt="" class="img-fluid card-img-top">
             <div class="p-4">
@@ -306,12 +267,12 @@
     <div class="container">
       <div class="row py-4">
         <div class="col-lg-3 col-md-6 mb-5 ms-2" style="color: white">
-          <h5 class="mb-4 text-white text-uppercase font-weight-bold">
+          <h5 class="mb-4 text-white text-uppercase font-weight-bold" style="color:#ffffff">
             Get In Touch
           </h5>
-          <p class="font-weight-medium">Jalan Kenangan</p>
-          <p class="font-weight-medium">+6281234567890</p>
-          <p class="font-weight-medium">timprojectpcc2022@gmail.com</p>
+          <p><i class="fa fa-map-marker">  Jalan Kenangan</i></p>
+          <p><i class="fa fa-phone">  +6281234567890</i></p>
+          <p><i class="fa fa-envelope"> timprojectpcc2022@gmail.com</i> </p>
           <h6 class="mt-4 mb-3 text-white text-uppercase font-weight-bold">
             Follow Us
           </h6>
@@ -430,29 +391,11 @@
   </div>
   <!-- Copyright end -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Folder Bootstrap -->
 
-
-  <!-- Additional Scripts -->
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/owl.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/isotope.js"></script>
-  <script src="assets/js/accordions.js"></script>
-
-
-  <script language="text/Javascript">
-    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-    function clearField(t) {                   //declaring the array outside of the
-      if (!cleared[t.id]) {                      // function makes it static and global
-        cleared[t.id] = 1;  // you could use true and false, but that's more typing
-        t.value = '';         // with more chance of typos
-        t.style.color = '#fff';
-      }
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
