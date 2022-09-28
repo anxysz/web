@@ -98,6 +98,8 @@ a.filled-button:hover {
     left: 0;
     right: 0;
     bottom: 0;
+	width: 1500px;
+	height: 755px;
     background: rgba(26, 29, 32, 0.7);
     z-index: 1;
 }
