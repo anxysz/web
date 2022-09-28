@@ -1,5 +1,11 @@
-.navbar {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.navbar {   
 	z-index: 3;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7)
 }
 
 .nav-color{
@@ -9,6 +15,50 @@
 
 .bg-transparent{
 	transition: all ease-in 0.3s;
+}
+
+section{
+    z-index: 2;
+    position: relative;
+}
+
+/* Navbar tran */
+.overlay{
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 29, 32, 0.7);
+}
+
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 576px) {
+    .overlay h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .overlay h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 20%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
 }
 
 .navbar .navbar-brand {
@@ -84,48 +134,13 @@ h3,
 h4,
 h5,
 h6 {
+    font-weight: 800;
 	margin: 0px;
 }
 
 a.filled-button:hover {
 	background-color: #121212;
 	color: #fff;
-}
-
-/* Carousel */
-.carousel-caption {
-    margin-left: 0;
-    top: 0;
-    left: 0;
-    right: o;
-    bottom: 0;
-	width: 1500px;
-	height: 755px;
-    background: rgba(26, 29, 32, 0.7);
-    z-index: 1;
-}
-
-@media (max-width: 576px) {
-    .carousel-caption h5 {
-        font-size: 14px;
-        font-weight: 500 !important;
-    }
-
-    .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 600 !important;
-    }
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 20%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
-    height: 3rem;
 }
 
 .card-img-top {
