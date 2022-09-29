@@ -250,3 +250,10 @@ a.filled-button:hover {
         left: 0;
     }
 }
+
+/* Font Artikel */
+
+.judul{
+    font-size: 45px;
+    font-family: 'Nunito', sans-serif;
+}
