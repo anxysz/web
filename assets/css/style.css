@@ -143,13 +143,6 @@ a.filled-button:hover {
 	color: #fff;
 }
 
-.card-img-top {
-    width: 100%;
-    height: 50vh;
-    max-height: 20vh; /*not want to take all vertical space*/
-    object-fit: cover;/*show all image, autosized, no cut, in available space*/
-}
-
 /* Section Title */
 .section-title::before {
     position: absolute;
