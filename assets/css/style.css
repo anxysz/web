@@ -9,6 +9,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7)
 }
 
+/* Navbar Transisi */
 .nav-color {
     background-color: #1e1e1e;
     transition: all ease-in-out 0.3s;
@@ -35,6 +36,7 @@ section {
 }
 
 .bg-cover {
+    text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,9 +148,8 @@ h2,
     font-weight: 800 !important;
 }
 
-h5,
-h6,
-.fw-medium {
+h5, .fw-medium {
+    text-align: center;
     font-weight: 600 !important;
 }
 
@@ -205,7 +206,7 @@ a.filled-button:hover {
     animation: section-title-run-sm 5s infinite linear;
 }
 
-@-webkit-keyframes section-title-run {
+@keyframes section-title-run {
     0% {
         left: 0;
     }
@@ -219,7 +220,7 @@ a.filled-button:hover {
     }
 }
 
-@-webkit-keyframes section-title-run-center {
+@keyframes section-title-run-center {
     0% {
         left: 50%;
         margin-left: -75px;
