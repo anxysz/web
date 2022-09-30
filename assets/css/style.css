@@ -148,7 +148,8 @@ h2,
     font-weight: 800 !important;
 }
 
-h5, .fw-medium {
+h5,
+.fw-medium {
     text-align: center;
     font-weight: 600 !important;
 }
@@ -156,6 +157,38 @@ h5, .fw-medium {
 a.filled-button:hover {
     background-color: #121212;
     color: #fff;
+}
+
+/* Artiel */
+
+.Trending,
+h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+.new,
+h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+.latest,
+h3 {
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+/* Produk */
+.produk, h5{
+    font-family: "Roboto", sans-serif;
+    font-size: 550px;
 }
 
 /* Section Title */
