@@ -29,12 +29,7 @@
             <div class="card shadow-lg" style="background: rgb(232, 232, 232)">
               <div class="card-body p-5">
                 <h1 class="fs-4 card-title fw-bold mb-4">Sign Up</h1>
-                <form
-                  method="POST"
-                  class="needs-validation"
-                  novalidate=""
-                  autocomplete="off"
-                >
+                <form>
                   <div class="mb-3">
                     <label class="mb-2 text-muted" for="name">Name</label>
                     <input
@@ -83,14 +78,17 @@
                   </p>
 
                   <div class="align-items-center d-flex">
-                    <button type="submit" class="btn btn-primary ms-auto">
-                      <a href="index.html" class="text-white">Sign in</a>
+                    <button type="submit" class="btn btn-primary ms-auto" id="signup">
+                      Sign Up
                     </button>
-                    <a href="index.html" class="ms-auto">
-                      <button type="button" class="btn btn-primary">
-                        Sign Up
-                      </button>
-                    </a>
+                    <script>
+                      document.querySelector("#signup").addEventListener('click', function () {
+                        Swal.fire("Successfuly Sign Up", "Welcome to POLIMKM Websites!", "success").then(function () {
+                          window.location.href = "index.html";
+                        }
+                        );
+                      });
+                    </script>
                   </div>
                 </form>
               </div>
@@ -106,6 +104,7 @@
       </div>
     </section>
 
-    <script src="assets/js/login.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+
   </body>
 </html>
