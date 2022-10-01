@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://www.dafont.com/bunch-bonarie.font");
 
 body {
     font-family: "Roboto", sans-serif;
@@ -69,6 +70,7 @@ section {
     float: left;
     margin-top: -12px;
     outline: none;
+    font-family: cursive;
 }
 
 #navbarResponsive {
@@ -159,8 +161,12 @@ a.filled-button:hover {
     color: #fff;
 }
 
-#card_edukasi{
-    font-size: 500px;
+/* Edukasi */
+
+.edukasi{
+    font-family: cursive;
+    text-align: center;
+    padding-top: 50px;
 }
 
 /* Artiel */
@@ -192,7 +198,7 @@ h3 {
 /* Produk */
 .produk, h5{
     font-family: "Roboto", sans-serif;
-    font-size: 550px;
+    padding-top: 11px;
 }
 
 /* Section Title */
