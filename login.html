@@ -30,17 +30,13 @@
             <div class="card shadow-lg" style="background: rgb(232, 232, 232)">
               <div class="card-body p-5">
                 <h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
-                <form>
+                <form action="index.html">
                   <div class="mb-3">
-                    <label class="mb-2 text-muted" for="email">
-                      E-Mail Address
-                    </label>
+                    <label class="mb-2 text-muted" for="email"> E-Mail </label>
                     <input
                       id="email"
                       type="email"
                       class="form-control"
-                      name="email"
-                      value=""
                       required
                       autofocus
                     />
@@ -55,7 +51,6 @@
                       id="password"
                       type="password"
                       class="form-control"
-                      name="password"
                       required
                     />
                     <div class="invalid-feedback">Password is required</div>
@@ -80,19 +75,6 @@
                     >
                       Login
                     </button>
-                    <script>
-                      document
-                        .querySelector('#login')
-                        .addEventListener('click', function () {
-                          Swal.fire(
-                            'Successfuly Login',
-                            'Welcome to POLIMKM Websites!',
-                            'success'
-                          ).then(function () {
-                            window.location.href = 'index.html';
-                          });
-                        });
-                    </script>
                   </div>
                 </form>
               </div>
@@ -108,6 +90,29 @@
       </div>
     </section>
 
-    <script src="assets/js/sweetalert2.all.min.js"></script>
+    <!-- <script src="assets/js/sweetalert2.all.min.js"></script> -->
+
+    <!-- via internet -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script Validasi -->
+    <script>
+      document.querySelector('#login').addEventListener('click', function () {
+        let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+        let email = document.getElementById('email').value;
+        console.log(regex.test(email));
+
+        if (regex.test(email) == true) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Success Login',
+            text: 'Welcome to POLIMKM Websites!',
+            showConfirmButton: false,
+          });
+        } else {
+          return false;
+        }
+      });
+    </script>
   </body>
 </html>
