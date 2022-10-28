@@ -282,10 +282,9 @@ h5 {
 }
 
 /* Responsive */
-/*untuk layar device berukuran kecil*/
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 250px) {
   .carous {
-    padding: 15% 0 0 0;
+    padding: 10% 0 0;
   }
 
   body > .bgColorMobile {
@@ -297,13 +296,46 @@ h5 {
     width: none;
   }
 
+  .bg-cover {
+    padding: 10% 0 0 0;
+  }
+
   .overlay h1 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600 !important;
   }
 
   .overlay h5 {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 400 !important;
+  }
+}
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 360px) {
+  .carous {
+    padding: 10% 0 0;
+  }
+
+  body > .bgColorMobile {
+    background-color: #1e1e1e !important;
+  }
+
+  .carousel-item > img {
+    height: 300px;
+    width: none;
+  }
+
+  .bg-cover {
+    padding: 10% 0 0 0;
+  }
+
+  .overlay h1 {
+    font-size: 16px;
+    font-weight: 600 !important;
+  }
+
+  .overlay h5 {
+    font-size: 13px;
     font-weight: 400 !important;
   }
 }
@@ -311,7 +343,7 @@ h5 {
 /*untuk layar device berukuran sedang*/
 @media screen and (min-width: 550px) {
   .carous {
-    padding: 7% 0 0 0;
+    padding: 10% 0 0 0;
   }
 
   body .bgColorMobile {
@@ -328,6 +360,10 @@ h5 {
     width: none;
   }
 
+  .bg-cover {
+    padding: 8% 0 0 0;
+  }
+
   .overlay h5 {
     font-size: 20px;
     font-weight: 400 !important;
@@ -336,10 +372,16 @@ h5 {
 
 /*untuk layar device berukuran 768*/
 @media screen and (min-width: 768px) {
+  .bg-cover {
+    padding: 8% 0 0 0;
+  }
 }
 
 /*untuk layar device berukuran besar*/
 @media screen and (min-width: 800px) {
+  .bg-cover {
+    padding: 4% 0 0 0;
+  }
   .carous {
     padding: 3% 0 0 0;
   }
@@ -376,48 +418,49 @@ h5 {
   }
 }
 
-@import url("https://font.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
-body,button{
-    font-family: "Inter", sans-serif;
+@import url('https://font.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+body,
+button {
+  font-family: 'Inter', sans-serif;
 }
 
-:root{
-    --offcanvas-width:270px;
-    --topNavbarHeight:56px;
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
 }
 
-.sidebar-nav{
-    width: var(--offcanvas-width);
+.sidebar-nav {
+  width: var(--offcanvas-width);
 }
 
-.sidebar-link{
-    display: flex;
-    align-items: center;
+.sidebar-link {
+  display: flex;
+  align-items: center;
 }
 
-.sidebar-link .right-icon{
-    display: inline-flex;
-    transition: all ease 0,25s;
+.sidebar-link .right-icon {
+  display: inline-flex;
+  transition: all ease 0, 25s;
 }
 
-.sidebar-link[aria-expanded="True"] .right-icon{
-    transform: rotate(180deg);
+.sidebar-link[aria-expanded='True'] .right-icon {
+  transform: rotate(180deg);
 }
 
-@media (min-width:992px) {
-    body{
-        overflow: auto !important;
-    }
-    main{
-        margin-left: var(--offcanvas-width);
-    }
-    .offcanvas-backdrop::before{
-        display: none;
-    }
-    .sidebar-nav {
-        transform: none;
-        visibility: visible !important;
-        top: var(--topNavbarHeight);
-        height: calc(100% - var(--topNavbarHeight));
-    }
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    transform: none;
+    visibility: visible !important;
+    top: var(--topNavbarHeight);
+    height: calc(100% - var(--topNavbarHeight));
+  }
 }
